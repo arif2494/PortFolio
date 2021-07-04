@@ -87,3 +87,20 @@ $('.button-group').each(function(i, buttonGroup) {
 		$(this).addClass('active');
 	});
 });
+
+// *============Typed js ===========
+var typed = new Typed('#typed', {
+	// stringsElement: null,
+	strings: [
+		'I am a Full-stack Web Developer',
+		'I have been working since 2019',
+		'Web Development is my passion',
+		'I work with Dedication and Honestly'
+	],
+	// smartBackspace: true,
+	typeSpeed: 80,
+	startDelay: 300,
+	backDelay: 700,
+	loop: true,
+	loopCount: Infinity
+});

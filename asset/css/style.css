@@ -36,6 +36,7 @@ sb-color {
 	z-index: 11;
 	transition: all 1s ease;
 	height: calc(100vh - 30px);
+	background-color: #20202a;
 }
 .side-image {
 	height: 100px;
@@ -57,7 +58,6 @@ sb-color {
 }
 .sidebar-middle {
 	padding-top: 15px;
-	background-color: #20202a;
 	max-height: 70vh;
 	overflow-y: scroll;
 	/* this will hide the scrollbar in mozilla based browsers */
@@ -313,7 +313,7 @@ sb-color {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	background: #23232c;
+	background: linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 }
 .icon-bar a {
 	color: cornsilk;
