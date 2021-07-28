@@ -1,3 +1,7 @@
+//*============ preloder============
+$(window).on('load', function() {
+	$('.loader-wrapper').fadeOut('slow');
+});
 // *============Progress bar===========
 // ?Circle - 1
 const numb1 = document.querySelector('.numb1');

@@ -26,6 +26,23 @@ sb-color {
 .st-color {
 	color: #8c8c8e;
 }
+/* ?Preloder */
+.loader-wrapper {
+	background-color: #262626;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 13;
+}
+.loader-wrapper img {
+	height: 200px;
+	width: 200px;
+}
 
 /* *========Side BAr========= */
 #sidebar {
@@ -39,8 +56,8 @@ sb-color {
 	background-color: #20202a;
 }
 .side-image {
-	height: 100px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 	border-radius: 50%;
 }
 .sidebar-top {
@@ -49,6 +66,14 @@ sb-color {
 	flex-direction: column;
 	align-items: center;
 	height: 225px;
+}
+.sidebar-top h5 {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.sidebar-top h5 {
+	font-size: 1rem;
+	font-weight: 600;
 }
 /* ?=======Hide the scroll bar====== */
 
@@ -367,7 +392,8 @@ sb-color {
 	font-size: 52px;
 }
 .banner code {
-	font-size: 26px;
+	font-size: 16px;
+	color: #fafafc;
 }
 .banner a {
 	color: #fff;
@@ -461,8 +487,11 @@ sb-color {
 
 /* *======== Work section======= */
 #previous-work .element-item {
-	width: 344px;
+	max-width: 320px;
 	margin: 8px;
+}
+#previous-work .grid img {
+	max-width: 250px;
 }
 #previous-work .button-group a {
 	color: #8c8c8e;
@@ -677,6 +706,53 @@ label #cancel {
 }
 
 /* *============= All responsive ============*/
+@media only screen and (max-width: 320px) {
+	body {
+		overflow-x: hidden;
+	}
+	.main-content {
+		width: 100%;
+	}
+	.bg-image,
+	.dark-overlay {
+		width: 100vw;
+	}
+	.banner {
+		height: 544px;
+		margin-bottom: 20px;
+		position: relative;
+	}
+	.banner-text {
+		text-align: center;
+	}
+	.banner-text h1 {
+		font-size: 46px;
+	}
+	.banner-text .typing {
+		height: 60px !important;
+	}
+	.banner .hire-me-btn {
+		height: 100px;
+		margin: 0 auto;
+		max-width: 150px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		justify-content: center;
+	}
+	.banner a {
+		padding: 10px 20px;
+		width: 100%;
+	}
+	#previous-work .element-item {
+		max-width: 320px !important;
+		margin: 8px;
+	}
+	#previous-work .grid img {
+		max-width: 250px;
+	}
+}
+
 @media only screen and (max-width: 1200px) {
 	.banner-potrait {
 		display: none;
