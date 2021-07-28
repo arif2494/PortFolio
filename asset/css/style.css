@@ -580,7 +580,7 @@ sb-color {
 #contact-form .form-control {
 	border: none;
 	border-radius: 0;
-	padding: 25px;
+	padding: 10px;
 }
 #contact-form .form-control:focus {
 	box-shadow: 1px 3px 10px 8px rgba(76, 175, 80, 0.37);
@@ -644,6 +644,7 @@ label #cancel {
 label #cancel {
 	left: 250px;
 	top: 25px;
+	position: fixed;
 	font-size: 25px;
 	color: rgb(255, 255, 255);
 	padding: 6px 12px;
